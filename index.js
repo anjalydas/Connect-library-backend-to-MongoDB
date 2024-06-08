@@ -6,8 +6,8 @@ const app = express()
 const port = 3000
 
 
-app.use('./books', booksRoutes)
-app.use('./author', authorRoutes)
+app.use('/books', booksRoutes)
+app.use('/author', authorRoutes)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
